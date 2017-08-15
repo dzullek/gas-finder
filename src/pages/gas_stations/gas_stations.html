@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Gas stations</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+<ion-list>
+  <button ion-item *ngFor="let station of stations" >
+    {{ station.name }}
+  </button>  
+</ion-list>
+</ion-content>

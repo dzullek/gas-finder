@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GasStationsListPage} from '../gas_stations/gas_stations';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -9,6 +10,10 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  searchForGasStations(){
+    this.navCtrl.push(GasStationsListPage);
   }
 
 }
